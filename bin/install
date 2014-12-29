@@ -39,7 +39,7 @@ function check_bundler_installed {
 }
 
 function check_deps {
-    check_npm_installed
+    #check_npm_installed
     check_bundler_installed
 }
 
@@ -73,7 +73,7 @@ function install_gem {
 
 function install {
     check_deps
-    install_npm
+    #install_npm
     #install_bower
     install_gem
     #install_submodule
