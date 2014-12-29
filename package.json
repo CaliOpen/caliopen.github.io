@@ -1,0 +1,22 @@
+{
+  "name": "caliopen.github.io",
+  "version": "1.0.0",
+  "description": "Development website for CaliOpen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CaliOpen/caliopen.github.io.git"
+  },
+  "keywords": [
+    "CaliOpen"
+  ],
+  "author": "CaliOpen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaliOpen/caliopen.github.io/issues"
+  },
+  "homepage": "https://github.com/CaliOpen/caliopen.github.io"
+}
