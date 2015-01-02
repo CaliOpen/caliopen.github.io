@@ -14,7 +14,7 @@ before maintainers accept and merge your work.
 You MUST follow the repository coding standards. If no formal coding standard
 are provided, try to follow the one already in use.
 
-You MUST run the test suite.
+You MUST run the test suite. We try our best to keep this simple.
 
 You MUST write (or update) unit tests.
 
@@ -32,6 +32,10 @@ commits such as `fix tests`, `fix 2`, `fix 3`, etc.).
 
 Also, while creating your Pull Request on GitHub, you MUST write a description
 which gives the context and/or explains why you are creating it.
+
+To ease review, you are encouraged to create a pull request early. Use
+**[WIP]** in the title (stands for Work In Progress) to ensure it will not be
+merged until completion.
 
 Thank you!
 
