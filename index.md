@@ -22,7 +22,7 @@ dev](https://github.com/CaliOpen/caliopen-dev) repository.
 ### Requirements
 
 * [Docker](https://docker.com/)
-* [fig](https://fig.sh)
+* [Docker compose](https://docs.docker.com/compose/) ex fig
 * python 2.7
 * python-dev (debian package, or your distribution equivalent)
 * virtualenv (debian package, or your distribution equivalent)
