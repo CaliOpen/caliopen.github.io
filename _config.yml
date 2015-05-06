@@ -98,7 +98,7 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #
   analytics :
-    provider : google
+    provider : piwik
     google :
         tracking_id : 'UA-123-12'
     getclicky :
@@ -106,8 +106,8 @@ JB :
     mixpanel :
         token : '_MIXPANEL_TOKEN_'
     piwik :
-        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
-        idsite : '1'                   # the id of the site on Piwik
+        baseURL : 'piwik.caliopen.org/analytics/' # Piwik installation address (without protocol)
+        idsite : '2'                   # the id of the site on Piwik
 
   # Settings for sharing helper.
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
