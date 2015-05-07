@@ -106,7 +106,7 @@ JB :
     mixpanel :
         token : '_MIXPANEL_TOKEN_'
     piwik :
-        baseURL : 'piwik.caliopen.org/analytics/' # Piwik installation address (without protocol)
+        baseURL : 'piwik.caliopen.org/analytics' # Piwik installation address (without protocol)
         idsite : '3'                   # the id of the site on Piwik
 
   # Settings for sharing helper.
