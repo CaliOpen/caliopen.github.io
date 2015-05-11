@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# This is the project root.
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+
+cd $DIR
+bundle exec jekyll serve $@
