@@ -3,6 +3,7 @@ layout: page
 title: Contribute
 header: How To Contribute To Caliopen
 group: navigation
+category: guides
 ---
 {% include JB/setup %}
 
