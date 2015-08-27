@@ -27,6 +27,6 @@ Trello card.
 * [Milestone &#35;4 - Messages](./04-messages.html)
 * [Milestone &#35;5 - Contacts](./05-contacts.html)
 * [Milestone &#35;6 - Search](./06-search.html)
-* [Milestone &#35;7 - User Settings](./07-settings.html)
-* [Milestone &#35;8 - Tutorial](./08-tutorial.html)
+* [Milestone &#35;7 - Tutorial](./07-tutorial.html)
+* [Milestone &#35;8 - User Settings](./08-settings.html)
 

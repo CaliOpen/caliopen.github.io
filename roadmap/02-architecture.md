@@ -42,4 +42,3 @@ does not need to implement more than e-mail messages.
 * Cross application interactions (switch application, privacy index...)
 * Proposal for List of Conversations UX
 * Proposal for Single Conversation UX
-* Proposal for New Message UX

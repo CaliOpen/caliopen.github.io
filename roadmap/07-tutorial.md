@@ -1,6 +1,6 @@
 ---
 layout: roadmap-item
-title: Milestone &#35;8 - Tutorial
+title: Milestone &#35;7 - Tutorial
 ---
 
 ### Frontend:
