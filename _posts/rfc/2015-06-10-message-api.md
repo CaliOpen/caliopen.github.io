@@ -2,7 +2,7 @@
 layout: page
 title: API for messages
 category: rfc
-status: proposal
+status: done
 ---
 
 This RFC describe the CaliOpen message API requirements to implement current

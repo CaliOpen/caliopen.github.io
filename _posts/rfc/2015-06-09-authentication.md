@@ -2,7 +2,7 @@
 layout: page
 title: Authentication
 category: rfc
-status: proposal
+status: done
 ---
 
 Authentication for an user is done using a POST with it's username and password
