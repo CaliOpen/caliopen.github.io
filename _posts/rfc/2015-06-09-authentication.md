@@ -4,8 +4,6 @@ title: Authentication
 category: rfc
 status: proposal
 ---
-{% include JB/setup %}
-
 
 Authentication for an user is done using a POST with it's username and password
 on /authentications REST API. Response from this API contain user ID (uuid) and
@@ -15,7 +13,7 @@ Then call to authenticated API is done using normal HTTP authentication mechanis
 using an Authorization header, with user_id as username and access_token as password
 
 
-
+```python
     import requests
     from requests.auth import HTTPBasicAuth
 
@@ -40,3 +38,4 @@ using an Authorization header, with user_id as username and access_token as pass
 
     auth = HTTPBasicAuth(data['user_id'], data['tokens']['access_token'])
     requests.get('%s/api/threads' % base_url, auth=auth)
+```

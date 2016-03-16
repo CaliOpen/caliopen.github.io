@@ -1,4 +1,5 @@
 ---
+layout: page
 title: API for messages
 category: rfc
 status: proposal
