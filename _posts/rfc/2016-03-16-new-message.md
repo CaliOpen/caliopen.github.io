@@ -4,6 +4,7 @@ title: API for creating messages
 category: rfc
 status: proposal
 ---
+{% include JB/setup %}
 
 This RFC describe the CaliOpen message API requirements to create a new message.
 
@@ -17,28 +18,30 @@ property. If this message is related to a **Thread** then it MUST be created wit
 
 ### Recipients
 
-A recipient MIGHT be related to an known **Contact**. It is defined by
-the following informations:
+A recipient MIGHT be related to an known **Contact**. At least a `contact_id` or an `address` MUST
+be defined. `protocol` MUST be defined. It is defined by the following informations:
 
 * `contact_id`: Known user contact reference
 * `address`: Address to use for sending a message to this recipient
 * `protocol`: Communication protocol for this recipient address
 
-### Messsage
+### Message
 
 Every new message MIGHT provide the following information:
 
-* `thread_id`: Reference to the thread the message is included in.
+* `threads`: Reference threads the message is included in. At least one thread MUST be defined.
 * `body`: the message body/content/text
-* `to`: List of recipients to send message to
-* `cc`: List of recipients to send a carbon copy of this message
-* `bcc`: List of recipients to send a blind carbon copy of this message
 * `subject`: Message subject, only apply for mail format
 * `attachments`: List of attachments included in the mail
 
 These informations can be updated until message is finalized.
 
-### MessagePart
+### Threads
+
+* `thread_id`: Reference to the thread.
+* `recipients`: List of recipients to send message to
+
+### Attachments
 
 This resource concern attachments that can be included when preparing a new message.
 
@@ -50,9 +53,21 @@ This resource concern attachments that can be included when preparing a new mess
 
 * When replying to a thread, recipients are known and MUST NOT be defined.
 
+> Do we need to be able to change the protocol in a thread, yes I guess.
+
+* Does the thread MUST have recipient list and preferred protocol ?
+
 * When adding a new recipient to a message having a thread reference, what happen ?
     ** Create a new thread ?
     ** Include this recipient in current thread ?
 
+> Message MUST NOT add a new recipient to a thread.
+
 * When defining recipient for a new message, it may define which Thread
  this message may relate to.
+
+> I don't get, what's the question ?
+
+* Do we need to allows bcc or cc the message ? Does this will create or attach to a Thread ?
+
+* What about contact creation on the fly like it is described in Recipients section ?
