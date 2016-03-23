@@ -4,6 +4,7 @@ title: API for updating messages
 category: rfc
 status: proposal
 ---
+
 {% include JB/setup %}
 
 This RFC describe the CaliOpen message API requirements to update a message.
