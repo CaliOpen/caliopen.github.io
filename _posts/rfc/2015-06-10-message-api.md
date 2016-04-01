@@ -64,6 +64,7 @@ information:
 * `status`: draft, sending, sent, deleted for outcoming messages. unread, read, deleted 
   for incoming ones.
 * `thread`: link to the thread the message is included in.
+* `sender`: link to contact who sent this message.
 * `recipients`: Recipients involved in this message 
 * `sent_at`: date and time the message was sent
 * `received_at`: date and time the message was received
