@@ -43,9 +43,22 @@ Report to [installation
 instructions](https://github.com/CaliOpen/caliopen-dev#caliopen-development-environment-and-toolbelt)
 for further informations.
 
-### Run
+The first time you run `start` comand it will build all the containers from scratch, it can be a bit long. Afterward you will be able to load some fixtures.
 
-By default the start command run CaliOpen in development environment. The staging environment can be launched with the following command:
+{% highlight bash %}
+# Start caliopen containers
+./bin/start
+
+# load a fake user
+./bin/load-fixtures
+{% endhighlight %}
+
+The server is now up on your machine on http://localhost:4000/.
+You will be able to connect with `julien.muetton@gandi.net` and `123456`.
+
+### Tips
+
+By default the `start` command run CaliOpen in development environment. The staging environment can be launched with the following command:
 
 {% highlight bash %}
 # Start or restart in staging environment
@@ -54,13 +67,14 @@ ENV=staging ./bin/start
 # Start or restart in development environment
 ./bin/start
 
-# Stop
+# Stop all CaliOpen running containers
 ./bin/stop
 {% endhighlight %}
 
-This use docker-compose, so you can see status of Caliopen:
+This uses docker-compose, so you can see status of Caliopen and its logs for each containers:
 
 {% highlight bash %}
 cd bin/
 docker-compose ps
+docker-compose logs
 {% endhighlight %}
