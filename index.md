@@ -7,6 +7,14 @@ tagline: Be Good
 
 Welcome to the [CaliOpen](https://caliopen.org) development community.
 
+**Want to play with our Proof Of Concept?**
+
+![GUI]({{ ASSET_PATH }}/images/play_with_poc.png)
+
+Go to https://poc.caliopen.org/ and login with `john@mail.caliopen.me`, password `123456`.
+
+_(Caliopen POC instance is regularly updated and might be broken)_
+
 ## Contribute
 
 Help is welcome.
