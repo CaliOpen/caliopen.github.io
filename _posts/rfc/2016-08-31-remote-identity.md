@@ -31,6 +31,7 @@ route: `GET v1/remote-identities`
       "connection_required": true,
       "cancel_fetch_required": false,
       "identity_type": "email",
+      "identity_id": "92d3727a-eefc-4537-b879-85f1c9d197bb",
       "params": {
         "login": "foo",
         "password": "bar",
@@ -51,8 +52,30 @@ route: `GET v1/remote-identities`
  * connected: calculated by the API, the result state of the last connection attempt
  * connection_required: user asked to connect
  * cancel_fetch_required: user asked to cancel fetching
- * identity_type: determine witch contact sub-object to use, can be one of ['email', 'im', 'social_identitiy']
+ * identity_type: determine witch contact sub-object to use, can be one of ['email', 'im',
+ 'social_identitiy']
  * identity_id: the sub-object id
- * params: an "free" with the properties required by the third party plateform
- * custom param entries:
-   * mail_protocol: standard `IMAP` or `POP` are allowed; `gmail` can be also a valid entry
+ * params: an "free" with the properties required by the third party plateform, the sub-object of
+ contact will determine what kind of provider will be used
+
+## Specific notes
+
+**Gmail** is a bit special because it is a mail that can be connected by IMAP, POP and its API.
+Also personnal and company addresses can be used with this provider eg. `foo@bar.tld`.
+
+When using this API, the client has to update the contact sub-object `provider` property:
+
+* PUT /contacts/{user.contact.contact_id}/emails/{email_id}
+
+```
+{
+  email: {
+    address: 'bender@planet-express.fake',
+    date_insert: '2016-05-25T14:13:05.591000',
+    is_primary: 1,
+    label: null,
+    type: 'home',
+    provider: 'gmail'
+  },
+}
+```
