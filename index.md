@@ -25,13 +25,25 @@ To contribute to a CaliOpen project, you MUST follow the
 ## Getting Started
 
 The development entrypoint is [CaliOpen
-dev](https://github.com/CaliOpen/caliopen-dev) repository.
+dev](https://github.com/CaliOpen/CaliOpen) repository.
 
 The bug tracker is available in [CaliOpen/Caliopen](https://github.com/CaliOpen/Caliopen/issues).
 
 ### Requirements
 
-* [Docker](https://docker.com/)
-* [Docker compose](https://docs.docker.com/compose/) ex fig
+* [Virtualbox](https://virtualbox.org)
+* [Vagrant](https://vagrantup.com)
 
-Once you have docker you can follow a [simple installation process](https://github.com/CaliOpen/caliopen-dev#caliopen-development-environment-and-toolbelt) to run a development or staging environment.
+Once you have vagrant and virtualbox installed, you can launch an development platform
+issuing theses commands:
+
+```
+cd devtools
+vagrant up
+```
+
+Are installed in this vm:
+
+- Cassandra, Elasticsearch, Redis storage services run in this VM
+- a CaliOpen LMTP server listen on port 4025 for mail delivery
+- a CaliOpen ReSt API server listen on port 6543
